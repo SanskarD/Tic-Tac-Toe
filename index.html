@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body class="bg-bg">
+    <main>
+        <div class="choice-screen">
+        <h1><span class=" icon-x clr-x fw-900">X</span> <span class="icon-o clr-o fw-900">O</span></h1>
+        <div class="container-choice ">
+                <form action="#">
+                    <div class="choices bg-tile">
+                        <h2 class="clr-rs">PICK PLAYER 1'S MARK</h2>
+                        <div class="choice-bg bg-bg" >
+                            <input type="radio" name="choice"  id="choice-x" name="choice-x" value="X">
+                            <label class="clr-rs fw-700" for="choice-x">X</label>
+                            <input type="radio" name="choice" id="choice-o" name="choice-o" value="O">
+                            <label class="clr-rs fw-700" for="choice-o">O</label>
+                        </div>
+                    <p>REMEMBER : X GOES FIRST</p>
+                </div>
+                <button class="newGame | bg-o clr-tile fw-700">NEW GAME!!</button>
+                </form>
+        </div>
+    </div>
+        <div class="conatiner playing-screen disabled">
+            <header>
+                <p><span class="clr-x fw-900">X</span> <span class="clr-o fw-900">O</span></p>
+                <p class="turn bg-tile clr-rs fw-700" id="player-turn"><span class="fw-900" id="player"></span>'s TURN</p>
+                <button class="reset bg-rs fw-700"><img  src="images/reload.svg" alt=""></button>
+            </header>
+            <section class="playing-area">
+                <div class="tiles fw-900 " data-icon="">
+                    
+                </div>
+                <div class="tiles fw-900 " data-icon="">
+                    
+                </div>
+                <div class="tiles fw-900" data-icon="">
+                
+                </div>
+                <div class="tiles fw-900" data-icon="">
+                
+                </div>
+                <div class="tiles fw-900" data-icon="">
+                
+                </div>
+                <div class="tiles fw-900" data-icon="">
+                
+                </div>
+                <div class="tiles fw-900" data-icon="">
+                
+                </div>
+                <div class="tiles fw-900" data-icon="">
+                
+                </div>
+                <div class="tiles fw-900" data-icon="">
+                
+                </div>
+            </section>
+            <footer>
+                <div class="score bg-x clr-bg fw-900">
+                    <span class="p1-dis">P1's Wins</span>
+                    <span class="p1-score" >0</span>
+                </div>
+                <div class="score bg-rs fw-900">
+                    <span class="ties-dis">TIES</span>
+                    <span class="ties-score">0</span>
+                </div>
+                <div class="score bg-o fw-900">
+                    <span class="p2-dis">P2's Wins</span>
+                    <span class="p2-score">0</span>
+                </div>
+            </footer>
+        </div>
+    </main>
+    <section class="win-state bg-tile  disabled">
+        <p class="winner fw-700"> <span class="winner-icon fw-900"></span> TAKES THE ROUND</p>
+        <button class="play-again bg-o fw-700">PLAY AGAIN!</button>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
